@@ -1,0 +1,21 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Pattern Lab Files & Folders #
+###############################
+config.rb
+data/
+favicon.ico
+index.html
+latest-change.txt
+patterns/
+README
+styleguide/
+
