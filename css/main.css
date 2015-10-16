@@ -237,10 +237,10 @@ body {
 
 /* Links */
 a {
-  color: #BA1382;
+  color: #166FE0;
   outline: 0; }
   a:hover, a:focus {
-    color: #5d0a41;
+    color: #0d4183;
     text-decoration: underline; }
   a:active {
     color: #7A6A0C;
@@ -261,7 +261,7 @@ h3, h4, h5, h6 {
   font-family: "montserratregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #7A6A0C; }
+  color: #BA1382; }
 
 h1 {
   font-size: 2.25em;
@@ -830,12 +830,11 @@ table.data {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3px;
-  font-family: "montserratbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.8125em;
+  margin-bottom: 20px;
+  font-family: "montserratregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
   background-color: #3E4447;
-  color: #FFFFFF;
-  text-transform: uppercase; }
+  color: #FFFFFF; }
   .primary-nav:after {
     content: " ";
     display: block;
@@ -845,7 +844,7 @@ table.data {
     padding: 0 7px 0 7px;
     margin: 0 20px;
     line-height: 40px;
-    font-size: 1em;
+    font-size: 1.125em;
     float: left;
     transition: background-color 0.5s ease;
     color: #FFFFFF; }
@@ -856,18 +855,23 @@ table.data {
         display: none; } }
   .primary-nav ul {
     display: none;
-    max-width: 1160px;
-    margin: 0 auto;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     position: relative;
     list-style: none;
     float: none;
     clear: left; }
+    .primary-nav ul:after {
+      content: " ";
+      display: block;
+      clear: both; }
     .primary-nav ul li {
       height: auto; }
       .primary-nav ul li a {
         display: block;
-        padding: 0 7px 0 7px;
+        padding: 0 27px;
         text-decoration: none;
         line-height: 40px;
         color: #FFFFFF; }
@@ -877,21 +881,37 @@ table.data {
       display: block; }
     .primary-nav ul ul {
       padding: 0;
-      display: none;
+      margin: 0;
       font-size: 1em;
-      z-index: 1000; }
+      z-index: 1000;
+      background-color: #FFFFFF; }
       .primary-nav ul ul li {
         float: none;
         position: relative;
-        padding-left: 10px;
         transition: background-color 0.5s ease;
         text-align: left; }
         .primary-nav ul ul li a {
-          padding: 0 10px 0 10px;
-          color: #FFFFFF; }
+          line-height: normal;
+          padding: 10px 60px;
+          color: #3E4447; }
+          .primary-nav ul ul li a::before {
+            position: absolute;
+            top: 15px;
+            left: 32px;
+            display: inline-block;
+            font-family: 'FontAwesome';
+            content: "\f148\00a0\00a0\00a0";
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
           .primary-nav ul ul li a:hover {
             background-color: #BA1382;
-            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); }
+            color: #FFFFFF; }
+    .primary-nav ul ul li ul li a {
+      padding-left: 85px; }
+      .primary-nav ul ul li ul li a::before {
+        left: 55px; }
   .primary-nav ul.mini-menu {
     display: block;
     margin: 0 20px;
@@ -901,6 +921,7 @@ table.data {
       float: left;
       display: inline; }
       .primary-nav ul.mini-menu li a {
+        padding: 0 10px;
         color: #FFFFFF;
         font-size: 1.125em; }
 
@@ -908,21 +929,19 @@ table.data {
   .primary-nav {
     text-align: center; }
     .primary-nav ul {
-      width: 100%;
-      margin: 0 auto;
-      position: relative;
-      display: table; }
+      display: block; }
       .primary-nav ul:after {
         content: "";
         clear: both;
         display: block; }
       .primary-nav ul li {
-        display: table-cell;
-        text-align: center;
+        display: inline;
+        float: left;
+        position: relative;
         border-top: none;
         padding-left: 0; }
         .primary-nav ul li a {
-          padding: 0 7px 0 7px;
+          padding: 0 15px 0 15px;
           display: block;
           border-bottom: 3px solid #3E4447; }
           .primary-nav ul li a:hover {
@@ -937,10 +956,15 @@ table.data {
         position: absolute;
         top: 100%;
         padding: 0;
+        padding-bottom: 5px;
         display: none;
-        width: auto;
+        width: 300px;
         background-color: #3E4447;
-        border-top: 3px solid #FFFFFF; }
+        border-top: 3px solid #FFFFFF;
+        -webkit-border-radius: 0 0 5px 5px;
+        -moz-border-radius: 0 0 5px 5px;
+        -ms-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px; }
         .primary-nav ul ul li {
           display: block;
           float: none;
@@ -948,15 +972,21 @@ table.data {
           margin: 0;
           padding-left: 0; }
           .primary-nav ul ul li a {
-            border-bottom: none; }
+            padding: 5px 15px;
+            border-bottom: none;
+            color: #FFFFFF; }
             .primary-nav ul ul li a:hover {
               border-bottom: none; }
+            .primary-nav ul ul li a::before {
+              display: none; }
           .primary-nav ul ul li ul {
             position: absolute;
             left: 100%;
             top: 0;
             width: 100%;
             border-top: none; }
+            .primary-nav ul ul li ul li a {
+              padding-left: 15px; }
     .primary-nav ul.mini-menu {
       display: none; } }
 .header-nav {

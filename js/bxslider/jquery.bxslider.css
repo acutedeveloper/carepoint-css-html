@@ -202,3 +202,35 @@
 	font-size: .85em;
 	padding: 10px;
 }
+
+/* CAREPOINT OVERRIDES */
+
+.bx-viewport{
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		border-radius: 5px;	
+}
+
+.bx-wrapper{
+	margin-bottom: 0;
+}
+
+.bx-wrapper .bx-pager{
+	bottom: 30px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+	height: 18px;
+	width: 18px;
+	background: #A29292;
+	border: 3px solid #FFFFFF;	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;	
+}
+
+
+
+
