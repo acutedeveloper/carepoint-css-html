@@ -972,7 +972,7 @@ table.data {
           margin: 0;
           padding-left: 0; }
           .primary-nav ul ul li a {
-            padding: 15px;
+            padding: 10px 15px;
             border-bottom: none;
             color: #FFFFFF; }
             .primary-nav ul ul li a:hover {
