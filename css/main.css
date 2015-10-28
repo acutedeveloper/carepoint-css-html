@@ -2129,7 +2129,7 @@ article img {
   font-style: italic;
   margin-bottom: 0.5em; }
 
-.nhs-choices-label {
+.nhs-choices-label, .block-info {
   padding: 15.00375px;
   margin-bottom: 20px;
   border: 3px solid #DFDFDF;

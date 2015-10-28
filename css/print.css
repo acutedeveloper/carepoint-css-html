@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    $Print
+\*------------------------------------*/
+p, p.intro, strong, a, h1, h2, h3, h4, h5, ul li, ol li {
+  color: #000000; }
+
+p {
+  font-size: 10pt; }
+
+small {
+  font-size: 8pt; }
+
+h1 {
+  font-size: 24pt; }
+
+h2 {
+  font-size: 16pt; }
+
+h3 {
+  font-size: 13pt; }
+
+h4 {
+  font-size: 12.5pt; }
+
+h5 {
+  font-size: 10pt; }
+
+@page {
+  margin: 0.5cm; }
+.print {
+  margin-top: 40px; }
+
+article img {
+  width: 45%;
+  display: block;
+  page-break-after: avoid;
+  page-break-inside: avoid; }
+
+article ul, li {
+  page-break-inside: avoid;
+  font-size: 10pt; }
