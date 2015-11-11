@@ -1010,6 +1010,11 @@ table.data {
         .header-nav ul li a i {
           font-size: 1.3125em; }
 
+#__ba_panel {
+  float: right;
+  margin-left: 15px;
+  margin-top: -5px; }
+
 @media (min-width: 900px) {
   .header-nav {
     display: block; } }
