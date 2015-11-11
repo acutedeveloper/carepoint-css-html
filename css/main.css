@@ -1329,6 +1329,36 @@ html, body {
   margin-left: -1.7rem;
   margin-right: 0.5em; }
 
+/* CAREPOINT OVERRIDES FOR BXSLIDER */
+.bx-viewport {
+  overflow: visible !important; }
+
+.bxslider li .textblock {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 13.33333px;
+  background-color: #3E4447; }
+  .bxslider li .textblock h2, .bxslider li .textblock p, .bxslider li .textblock a {
+    color: #FFFFFF;
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .bxslider li .textblock .btn {
+    border: 3px solid #FFFFFF; }
+  @media (min-width: 768px) {
+    .bxslider li .textblock {
+      max-width: 40%;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #111;
+      opacity: 0.85;
+      filter: alpha(opacity=85);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; } }
+
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
