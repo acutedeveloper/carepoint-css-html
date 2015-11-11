@@ -1338,7 +1338,11 @@ html, body {
   display: block;
   float: left;
   padding: 13.33333px;
-  background-color: #3E4447; }
+  background-color: #3E4447;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px; }
   .bxslider li .textblock h2, .bxslider li .textblock p, .bxslider li .textblock a {
     color: #FFFFFF;
     opacity: 1;
@@ -1360,10 +1364,16 @@ html, body {
       border-radius: 5px; } }
 
 .bx-wrapper img {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0; }
+  @media (min-width: 768px) {
+    .bx-wrapper img {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px; } }
 
 /*------------------------------------*\
     $BUTTONS
