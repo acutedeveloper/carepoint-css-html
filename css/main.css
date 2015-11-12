@@ -473,7 +473,7 @@ input[type="search"]::-webkit-search-decoration {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3px;
+  margin-top: 3px;
   padding: 25px;
   display: none;
   background-color: #00A7AD;
@@ -830,7 +830,6 @@ table.data {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
   font-family: "montserratregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125em;
   background-color: #3E4447;
@@ -1330,6 +1329,17 @@ html, body {
   margin-right: 0.5em; }
 
 /* CAREPOINT OVERRIDES FOR BXSLIDER */
+.carousel {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto; }
+  .carousel:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 .bx-viewport {
   overflow: visible !important; }
 
@@ -1743,7 +1753,9 @@ html, body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3px;
   padding: 25px 0;
+  display: none;
   background-color: #00A7AD; }
   .block-atoz-index:after {
     content: " ";
