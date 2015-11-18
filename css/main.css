@@ -1332,6 +1332,7 @@ html, body {
 .carousel {
   margin-top: 20px;
   margin-bottom: 40px;
+  padding: 0 20px;
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto; }
@@ -1348,6 +1349,7 @@ html, body {
   display: block;
   float: left;
   padding: 13.33333px;
+  width: 100%;
   background-color: #3E4447;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
@@ -1361,6 +1363,7 @@ html, body {
     border: 3px solid #FFFFFF; }
   @media (min-width: 768px) {
     .bxslider li .textblock {
+      width: auto;
       max-width: 40%;
       position: absolute;
       top: 20px;
