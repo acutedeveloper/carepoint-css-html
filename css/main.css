@@ -513,6 +513,35 @@ input[type="search"]::-webkit-search-decoration {
       float: right;
       margin-right: 0; } }
 
+.email-form {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 40px;
+  padding: 10px;
+  display: none;
+  background-color: #00A7AD;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFFFFF; }
+  .email-form:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .email-form h3, .email-form p, .email-form a {
+    color: #FFFFFF; }
+  .email-form hr {
+    margin: 10px 0;
+    background-color: #FFFFFF; }
+  .email-form form input {
+    margin-bottom: 5px; }
+  .email-form .btn {
+    border: 2px solid #FFFFFF;
+    font-size: 1em; }
+
 /* Custom Select menu style */
 select.select-style {
   -webkit-appearance: none;
