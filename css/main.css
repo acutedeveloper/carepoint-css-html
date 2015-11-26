@@ -1094,30 +1094,33 @@ table.data {
   float: left;
   margin-left: 0;
   margin-right: 0; }
+  .footer-nav .container {
+    padding-bottom: 20px; }
   .footer-nav ul {
     font-family: "montserratregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
-    color: #FFFFFF;
     width: 100%;
     margin: 0;
     padding: 0; }
     .footer-nav ul li {
       height: auto;
-      white-space: nowrap; }
+      white-space: nowrap;
+      border-bottom: #DFDFDF 1px solid; }
+      .footer-nav ul li:last-child {
+        border: none; }
       .footer-nav ul li a {
+        color: #BA1382;
         padding: 0 7px 0 7px;
         text-decoration: none;
         line-height: 40px;
-        color: #FFFFFF;
         text-decoration: none; }
         .footer-nav ul li a:hover {
           color: #1C2F47;
           text-decoration: underline; }
-  @media (min-width: 480px) {
-    .footer-nav ul {
-      float: left; }
+    @media (min-width: 768px) {
       .footer-nav ul li {
-        display: inline; } }
+        display: inline;
+        border-bottom: none; } }
 
 /*------------------------------------*\
     $MAIN CONTENT AREA
@@ -1164,6 +1167,8 @@ html, body {
   margin: 0 auto 0; }
 
 .footer {
+  margin-bottom: 20px;
+  padding-top: 10px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1180,66 +1185,59 @@ html, body {
     content: " ";
     display: block;
     clear: both; }
-  .footer .footer-nav {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-  .footer .footer-logos {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-    .footer .footer-logos ul {
-      margin-top: 13.33333px; }
+  .footer h1, .footer h2, .footer h3, .footer p {
+    color: #FFFFFF;
+    margin-bottom: 10px; }
+    .footer h1 a, .footer h2 a, .footer h3 a, .footer p a {
+      color: #FFFFFF; }
   .footer .container {
     padding-bottom: 0px; }
-  @media (min-width: 480px) {
-    .footer .footer-logos {
-      width: 57.14286%;
-      float: right;
-      margin-right: 0; }
-    .footer .footer-nav {
-      width: 40%;
-      float: left;
-      margin-right: 2.85714%; } }
+  .footer .grid {
+    margin-bottom: 20px; }
 
 /*------------------------------------*\
     $FOOTER LOGOS
 \*------------------------------------*/
-.footer-logos ul li {
-  width: 40%;
-  float: left; }
-  .footer-logos ul li:nth-child(2n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
-    clear: both;
-    margin-left: 0; }
-  .footer-logos ul li:nth-child(2n + 2) {
-    margin-left: 60%;
-    margin-right: -100%;
-    clear: none; }
-@media (min-width: 768px) {
+.footer-logos {
+  text-align: center;
+  border-bottom: #3E4447 1px solid;
+  float: left;
+  width: 100%; }
+  .footer-logos .container {
+    padding-bottom: 20px; }
   .footer-logos ul li {
-    width: 18.18182%;
-    float: left; }
-    .footer-logos ul li:nth-child(4n + 1) {
-      margin-left: 0;
-      margin-right: -100%;
-      clear: both;
-      margin-left: 0; }
-    .footer-logos ul li:nth-child(4n + 2) {
-      margin-left: 27.27273%;
-      margin-right: -100%;
-      clear: none; }
-    .footer-logos ul li:nth-child(4n + 3) {
-      margin-left: 54.54545%;
-      margin-right: -100%;
-      clear: none; }
-    .footer-logos ul li:nth-child(4n + 4) {
-      margin-left: 81.81818%;
-      margin-right: -100%;
-      clear: none; } }
+    text-align: center;
+    padding-bottom: 40px; }
+    .footer-logos ul li:last-child {
+      padding-bottom: 0; }
+  @media (min-width: 768px) {
+    .footer-logos {
+      text-align: left; }
+      .footer-logos ul li {
+        width: 14.28571%;
+        float: left;
+        padding-bottom: 0; }
+        .footer-logos ul li:nth-child(5n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        .footer-logos ul li:nth-child(5n + 2) {
+          margin-left: 21.42857%;
+          margin-right: -100%;
+          clear: none; }
+        .footer-logos ul li:nth-child(5n + 3) {
+          margin-left: 42.85714%;
+          margin-right: -100%;
+          clear: none; }
+        .footer-logos ul li:nth-child(5n + 4) {
+          margin-left: 64.28571%;
+          margin-right: -100%;
+          clear: none; }
+        .footer-logos ul li:nth-child(5n + 5) {
+          margin-left: 85.71429%;
+          margin-right: -100%;
+          clear: none; } }
 
 /*------------------------------------*\
     $COMPONENTS
