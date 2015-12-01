@@ -1761,23 +1761,27 @@ html, body {
   border-bottom: 3px dotted #DFDFDF; }
   .block-directory-service .two-up-grid {
     padding: 0; }
-  .block-directory-service .header-block .btn-group {
-    display: block; }
-    .block-directory-service .header-block .btn-group a {
-      color: #00A7AD;
-      font-size: 1.5em; }
-      .block-directory-service .header-block .btn-group a:hover {
-        color: #0A5D60; }
-  @media (min-width: 768px) {
-    .block-directory-service .header-block h2 {
-      width: 82.85714%;
-      float: left;
-      margin-right: 2.85714%; }
+  .block-directory-service .header-block {
+    float: left;
+    display: block;
+    width: 100%; }
     .block-directory-service .header-block .btn-group {
-      width: 14.28571%;
-      float: right;
-      margin-right: 0;
-      text-align: right; } }
+      display: block; }
+      .block-directory-service .header-block .btn-group a {
+        color: #00A7AD;
+        font-size: 1.5em; }
+        .block-directory-service .header-block .btn-group a:hover {
+          color: #0A5D60; }
+    @media (min-width: 768px) {
+      .block-directory-service .header-block h2 {
+        width: 82.85714%;
+        float: left;
+        margin-right: 2.85714%; }
+      .block-directory-service .header-block .btn-group {
+        width: 14.28571%;
+        float: right;
+        margin-right: 0;
+        text-align: right; } }
 
 .block-atoz-index {
   max-width: 100%;
@@ -2269,3 +2273,6 @@ article img {
   color: #E02A16;
   border-color: #E02A16;
   background: #ffbebe; }
+
+#fs-nhs-widget {
+  width: auto !important; }

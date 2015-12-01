@@ -71,20 +71,21 @@
     width: 1160px;
     margin: 0 auto;
     position: relative;
-    display: table; }
+    display: block; }
     .primary-nav ul:after {
       content: "";
       clear: both;
       display: block; }
     .primary-nav ul li {
-      display: table-cell;
+      float: left;
       text-align: center;
       border-top: none;
       padding-left: 0; }
       .primary-nav ul li a {
-        padding: 0 7px 0 7px;
+        padding: 0 15px 0 15px;
         display: block;
-        border-bottom: 3px solid #3E4447; }
+        border-bottom: 3px solid #3E4447;
+        color: #FFFFFF; }
         .primary-nav ul li a:hover {
           border-bottom: 3px solid #BA1382; }
         .primary-nav ul li a.active {
@@ -103,12 +104,14 @@
       border-top: 3px solid #FFFFFF; }
       .primary-nav ul ul li {
         display: block;
-        float: none;
         position: relative;
         margin: 0;
-        padding-left: 0; }
+        padding-left: 0;
+        color: #FFFFFF; }
         .primary-nav ul ul li a {
-          border-bottom: none; }
+          text-align: left;
+          border-bottom: none;
+          color: #FFFFFF; }
           .primary-nav ul ul li a:hover {
             border-bottom: none; }
         .primary-nav ul ul li ul {
