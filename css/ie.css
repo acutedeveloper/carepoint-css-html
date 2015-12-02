@@ -123,6 +123,12 @@
   .primary-nav ul.mini-menu {
     display: none; }
 
+.primary-nav ul ul li a {
+  padding: 10px 20px; }
+
+.primary-nav ul ul li ul li a {
+  padding-left: 20px; }
+
 /**
  *
  * Header Navigation styles
@@ -152,39 +158,62 @@
   content: ""; }
 
 /**
+ *
+ * CAROUSEL
+ * 
+ */
+.bxslider li .textblock {
+  width: auto;
+  max-width: 40%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #111;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.bx-wrapper img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+/**
  * Footer Navigation
  */
-.footer .footer-nav {
-  width: 40.67797%;
-  float: left;
-  margin-right: 1.69492%; }
-  .footer .footer-nav ul {
-    float: left; }
-    .footer .footer-nav ul li {
-      display: inline; }
+.footer-nav ul li {
+  display: inline;
+  border: 1px solid transparent; }
 
-.footer .footer-logos {
-  width: 57.62712%;
-  float: right;
-  margin-right: 0; }
-  .footer .footer-logos ul li {
-    width: 21.05263%;
-    float: left; }
-    .footer .footer-logos ul li:nth-child(4n + 1) {
+.footer-logos {
+  text-align: left; }
+  .footer-logos ul li {
+    width: 16.66667%;
+    float: left;
+    padding-bottom: 0; }
+    .footer-logos ul li:nth-child(5n + 1) {
       margin-left: 0;
       margin-right: -100%;
       clear: both;
       margin-left: 0; }
-    .footer .footer-logos ul li:nth-child(4n + 2) {
-      margin-left: 26.31579%;
+    .footer-logos ul li:nth-child(5n + 2) {
+      margin-left: 20.83333%;
       margin-right: -100%;
       clear: none; }
-    .footer .footer-logos ul li:nth-child(4n + 3) {
-      margin-left: 52.63158%;
+    .footer-logos ul li:nth-child(5n + 3) {
+      margin-left: 41.66667%;
       margin-right: -100%;
       clear: none; }
-    .footer .footer-logos ul li:nth-child(4n + 4) {
-      margin-left: 78.94737%;
+    .footer-logos ul li:nth-child(5n + 4) {
+      margin-left: 62.5%;
+      margin-right: -100%;
+      clear: none; }
+    .footer-logos ul li:nth-child(5n + 5) {
+      margin-left: 83.33333%;
       margin-right: -100%;
       clear: none; }
 

@@ -1120,7 +1120,7 @@ table.data {
     @media (min-width: 768px) {
       .footer-nav ul li {
         display: inline;
-        border-bottom: none; } }
+        border: none; } }
 
 /*------------------------------------*\
     $MAIN CONTENT AREA
@@ -2275,4 +2275,5 @@ article img {
   background: #ffbebe; }
 
 #fs-nhs-widget {
-  width: auto !important; }
+  width: auto !important;
+  margin-bottom: 20px; }
