@@ -1410,6 +1410,10 @@ html, body {
       -ms-border-radius: 5px;
       border-radius: 5px; } }
 
+/* To move the textblock left */
+@media (min-width: 768px) {
+  .tbleft {
+    left: 20px; } }
 .bx-wrapper img {
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
