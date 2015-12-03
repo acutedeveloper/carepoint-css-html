@@ -716,6 +716,12 @@ table.data {
   float: right;
   margin-right: 0; }
 
+.grid {
+  margin-bottom: 20px;
+  float: left; }
+  .grid:last-child {
+    margin-bottom: 0; }
+
 /* Two-up layout */
 .two-up-grid {
   max-width: 1160px;
@@ -1077,6 +1083,8 @@ table.data {
   margin-bottom: 40px; }
   .pagination li {
     display: inline; }
+  .pagination .current {
+    padding: 1em; }
   .pagination a {
     padding: 1em;
     text-decoration: none;
@@ -1137,8 +1145,7 @@ table.data {
   color: #FFFFFF;
   background-color: #3E4447;
   padding: 10px 0;
-  margin-bottom: 3px;
-  text-align: center; }
+  margin-bottom: 3px; }
   .contact-bar p {
     margin: 0;
     font-size: 100%;
